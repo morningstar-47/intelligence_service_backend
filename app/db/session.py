@@ -11,7 +11,7 @@ from app.core.config import settings
 engine = create_engine(
     settings.SQLALCHEMY_DATABASE_URI,
     pool_pre_ping=True,
-    echo=settings.LOG_LEVEL == "DEBUG"
+    #echo=settings.LOG_LEVEL == "DEBUG"
 )
 
 # Créer une session de base de données locale
